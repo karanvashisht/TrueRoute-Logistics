@@ -1,0 +1,6 @@
+node_modules/
+.next/
+data/carrier-intakes.json
+.env*
+!.env.example
+

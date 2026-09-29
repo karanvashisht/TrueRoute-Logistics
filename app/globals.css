@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply bg-[#f6f8fb] text-ink antialiased; font-family: 'DM Sans', sans-serif; }
+  h1,h2,h3 { font-family: 'Manrope', sans-serif; }
+}
+@layer components {
+  .container-x { @apply mx-auto w-full max-w-7xl px-5 sm:px-8; }
+  .eyebrow { @apply inline-flex items-center gap-2 rounded-full border border-orange-200 bg-orange-50 px-3 py-1.5 text-xs font-bold uppercase tracking-[.12em] text-[#b95600]; }
+  .btn-primary { @apply inline-flex items-center justify-center gap-2 rounded-lg bg-brand px-5 py-3.5 text-sm font-bold text-white shadow-[0_10px_25px_rgba(247,127,0,.25)] transition hover:-translate-y-0.5 hover:bg-[#d86e00] focus:outline-none focus:ring-2 focus:ring-orange-400 focus:ring-offset-2; }
+  .btn-dark { @apply inline-flex items-center justify-center gap-2 rounded-lg bg-ink px-5 py-3.5 text-sm font-bold text-white transition hover:-translate-y-0.5 hover:bg-slate; }
+  .section-title { @apply text-3xl font-extrabold tracking-[-.04em] text-ink sm:text-4xl; }
+  .range-control { @apply mt-4 h-2 w-full cursor-pointer appearance-none rounded-full outline-none; }
+  .range-control::-webkit-slider-thumb { @apply h-5 w-5 cursor-pointer appearance-none rounded-full border-4 border-white bg-brand shadow-md; }
+  .range-control::-moz-range-thumb { @apply h-4 w-4 cursor-pointer rounded-full border-4 border-white bg-brand shadow-md; }
+}
